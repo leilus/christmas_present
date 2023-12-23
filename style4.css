@@ -1,0 +1,64 @@
+@font-face{
+    font-family: "HomeChristmas";
+    src: url('/fonts/HomeChristmas/Home\ Christmas.otf');
+}
+
+@font-face {
+    font-family: "MilkMango";
+    src: url('/fonts/MilkMango/Milk\ Mango.otf');
+}
+
+@font-face {
+    font-family: "KGRed";
+    src: url('/fonts/KGRed/KGRedHands.ttf');
+}
+
+body{
+    background-color: #e2bca3;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-family: HomeChristmas;
+    font-size: 60px;
+    color: #E1283A;
+}
+
+main .item{
+    background-color: grey;
+    height: 600px;
+    width: 300px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+main{
+    display: flex;
+    flex: 0 0 33.33%;
+    animation: scrollAnimation 20s linear 1;
+    animation-delay: 0.5s;
+    white-space: nowrap;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(100%));
+        display: none;
+    }
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.container p {
+    font-family: KGRed;
+}

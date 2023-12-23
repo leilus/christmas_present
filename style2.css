@@ -1,0 +1,170 @@
+@font-face{
+    font-family: "HomeChristmas";
+    src: url('/fonts/HomeChristmas/Home\ Christmas.otf');
+}
+
+@font-face {
+    font-family: "MilkMango";
+    src: url('/fonts/MilkMango/Milk\ Mango.otf');
+}
+
+@font-face {
+    font-family: "KGRed";
+    src: url('/fonts/KGRed/KGRedHands.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2bca3;
+}
+
+.loader{
+   height: 100vh;
+    position: fixed;
+    background-color: #e2bca3;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main h1{
+    text-align: center;
+    font-family: HomeChristmas;
+    font-size: 60px;
+    color: #E1283A;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 5px;
+}
+
+.first_elem, .second_elem, .third_elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.gift_box{
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.eyo{
+    position: absolute;
+    cursor: pointer;
+    animation: rollOut;
+    animation-duration: 1s;
+}
+
+.first_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3d4c0;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+}
+
+.first_item p{
+    font-family: Cream Cake;
+    font-size: 40px;
+}
+
+.second_item p{
+    font-family: MilkMango;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.second_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ae9a8d;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+}
+
+.third_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(114, 114, 114);
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+
+}
+
+.third_item img{
+}
+
+.content{
+    position: relative;
+    top: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.content button{
+    color: #ae9a8d;
+    font-size: 20px;
+    font-family: MilkMango;
+    width: 250px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.container button{
+    background-image: linear-gradient(to right, #f5f5f5, #ecaf6d, #b67a25, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    background-size: 300% 100%;
+    font-size: 20px;
+    font-family: MilkMango;
+    width: 200px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.container button:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.container .heart{
+    position: absolute;
+    display: none;
+}

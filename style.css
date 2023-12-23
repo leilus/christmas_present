@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "HomeChristmas";
+    src: url('/fonts/HomeChristmas/Home\ Christmas.otf');
+}
+
+@font-face {
+    font-family: "MilkMango";
+    src: url('/fonts/MilkMango/Milk\ Mango.otf');
+}
+
+@font-face {
+    font-family: "KGRed";
+    src: url('/fonts/KGRed/KGRedHands.ttf');
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e2bca3;
+}
+
+.main h1{
+    text-align: center;
+    font-family: HomeChristmas;
+    font-size: 60px;
+    color: #E1283A;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E6D8D6;
+    background-color: #E6D8D6;
+    border-radius: 60px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+}
+
+.container_items{
+    position: relative;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    z-index: 1;
+}
+
+.container input{
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    text-align: center;
+    font-family: MilkMango;
+}
+
+.cointainer input:focus{
+    outline: none;
+}
+
+.container_items #firstButton{
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+    width: 200px;
+    font-size: 17px;
+    font-family: Milk Mango;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 30px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.container_items #firstButton:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.minionek{
+    position: relative;
+    top: 300px;
+    text-align: center;
+    display: none;
+}
+
